@@ -6,11 +6,11 @@ const router = express.Router();
 router.get('/', async(req,res)=> {
 
     res.render('template', {
-        local: {
+        locals: {
             title: "About Me",
         },
-        body:{
-        partials:'partials/aboutme',
+        partials:{
+            body:'partials/aboutme',
         }
     });
 });

@@ -6,7 +6,7 @@ const router = express.Router();
 router.get('/', async(req,res)=> {
 
     res.render('template', {
-        local: {
+        locals: {
             title: 'Joshua Simon',
         },
         partials:{
